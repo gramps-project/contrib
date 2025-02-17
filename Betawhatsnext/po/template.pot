@@ -78,7 +78,7 @@ msgid ""
 msgstr ""
 
 #: Betawhatsnext/Betawhatsnext.py:86
-msgid "Seach Quota "
+msgid "Search Quota "
 msgstr ""
 
 #: Betawhatsnext/Betawhatsnext.py:92
