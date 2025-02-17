@@ -87,7 +87,7 @@ msgstr ""
 "Utilisez \"Configurer\" dans le menu \"Affichage\" pour modifier les options du Gramplet."
 
 #: Betawhatsnext/Betawhatsnext.py:86
-msgid "Seach Quota "
+msgid "Search Quota "
 msgstr "Quota de recherche "
 
 #: Betawhatsnext/Betawhatsnext.py:92
