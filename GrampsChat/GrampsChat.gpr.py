@@ -13,5 +13,5 @@ register(
     gramps_target_version="6.0",
     fname="GrampsChat.py",
     help_url="Gramplets#GUI_Interface",
-    #requires=["litellm", "opik"],
+    requires_mod=["litellm", "opik"],
 )
