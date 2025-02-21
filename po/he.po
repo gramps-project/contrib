@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Gramps 5.2.0 – mediamerge\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-16 15:10-0800\n"
-"PO-Revision-Date: 2025-02-18 18:51+0000\n"
+"PO-Revision-Date: 2025-02-20 13:28+0000\n"
 "Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gramps-project/"
 "addons/he/>\n"
@@ -2317,10 +2317,8 @@ msgid ""
 msgstr ""
 
 #: Betawhatsnext/Betawhatsnext.py:86
-#, fuzzy
-#| msgid "Search results"
 msgid "Search Quota "
-msgstr "תוצאות חיפוש"
+msgstr "מכסת חיפוש "
 
 #: Betawhatsnext/Betawhatsnext.py:92
 msgid "Depth per loop"
@@ -3402,10 +3400,8 @@ msgid "Default format for the places index"
 msgstr "תסדיר ברירת מחדל למפתח המקומות"
 
 #: DynamicWeb/dynamicweb.py:5033
-#, fuzzy
-#| msgid "The postal code for the place, if any."
 msgid "The default format for the places index"
-msgstr "המיקוד של המקום, אם קיים."
+msgstr "תסדיר ברירת המחדל של מפתח המקומות"
 
 #: DynamicWeb/dynamicweb.py:5045
 msgid ""
@@ -3491,10 +3487,8 @@ msgid "A note to be used as the brand name or image in the menu"
 msgstr ""
 
 #: DynamicWeb/dynamicweb.py:5208
-#, fuzzy
-#| msgid "Custom note"
 msgid "Custom pages"
-msgstr "הערה מותאם אישית"
+msgstr "עמודים מותאמים אישית"
 
 #: DynamicWeb/dynamicweb.py:5213
 #, python-format
@@ -3525,10 +3519,8 @@ msgid "Whether to print a menu for the custom page"
 msgstr ""
 
 #: DynamicWeb/dynamicweb.py:5236
-#, fuzzy
-#| msgid "Clear selections"
 msgid "Pages selection"
-msgstr "ניקוי בחירה"
+msgstr "בחירת עמודים"
 
 #: DynamicWeb/dynamicweb.py:5240
 msgid "Number of pages"
@@ -3695,10 +3687,8 @@ msgid "SQLite is a common local database format"
 msgstr ""
 
 #: Sqlite/Sqlite.gpr.py:19
-#, fuzzy
-#| msgid "Export"
 msgid "SQLite Export"
-msgstr "ייצוא"
+msgstr "ייצוא SQLite"
 
 #: Sqlite/ImportSql.py:893
 #, python-format
@@ -3766,16 +3756,12 @@ msgid "Order"
 msgstr ""
 
 #: CombinedView/combinedview.py:528
-#, fuzzy
-#| msgid "Add death event"
 msgid "Edit the active event"
-msgstr "הוספת אירוע פטירה"
+msgstr "עריכת באירוע הפעיל"
 
 #: CombinedView/combinedview.py:630
-#, fuzzy
-#| msgid "Set Tag"
 msgid "Show Tags"
-msgstr "הגדרת תג"
+msgstr "הצגת תגים"
 
 #: CombinedView/combinedview.py:656
 msgid "Vertical Details"
@@ -3816,7 +3802,7 @@ msgstr "אדם חדש"
 
 #: DataEntryGramplet/DataEntryGramplet.py:98
 msgid "Add relation"
-msgstr "הוספת קשר-גומלין"
+msgstr "הוספת יוחסה"
 
 #: DataEntryGramplet/DataEntryGramplet.py:99
 msgid "No relation to active person"
@@ -3986,20 +3972,16 @@ msgid "Shared Citation ID :"
 msgstr ""
 
 #: FamilyTreeDNA/ftdna_import.py:151
-#, fuzzy
-#| msgid "Active person"
 msgid "Active Person : "
-msgstr "אדם פעיל"
+msgstr "אדם פעיל: "
 
 #: FamilyTreeDNA/ftdna_import.py:165
 msgid "Import data from Family Finder files"
 msgstr ""
 
 #: FamilyTreeDNA/ftdna_import.py:169
-#, fuzzy
-#| msgid "Close the Media Verify Tool"
 msgid "Close the Family Finder Tool"
-msgstr "סגירת הכלי לאימות נתונים"
+msgstr "בחירת הכלי לאיתור משפחות"
 
 #: FamilyTreeDNA/ftdna_import.py:173
 msgid "Read Help manual"
@@ -4033,10 +4015,9 @@ msgid "Add %s haplogroup attribute"
 msgstr ""
 
 #: FamilyTreeDNA/ftdna_import.py:350
-#, fuzzy, python-format
-#| msgid "%s (association)"
+#, python-format
 msgid "Add %s DNA Association"
-msgstr "%s (סימוך)"
+msgstr "הוספת תסמיך DNA %s"
 
 #: FamilyTreeDNA/ftdna_import.py:367
 #, python-format
@@ -4092,16 +4073,12 @@ msgstr ""
 "ווינדווז."
 
 #: AttachSourceTool/AttachSourceTool.py:81
-#, fuzzy
-#| msgid "Sources?"
 msgid "Source type"
-msgstr "מקורות?"
+msgstr "סוג מקור"
 
 #: AttachSourceTool/AttachSourceTool.py:82
-#, fuzzy
-#| msgid "New person"
 msgid "New source"
-msgstr "אדם חדש"
+msgstr "מקור חדש"
 
 #: AttachSourceTool/AttachSourceTool.py:83
 msgid "Existing source"
@@ -4134,20 +4111,14 @@ msgid "Attach Source"
 msgstr ""
 
 #: AttachSourceTool/AttachSourceTool.py:174
-#, fuzzy
-#| msgid "Detecting faces..."
 msgid "Attaching sources...\n"
-msgstr "זיהוי פנים..."
+msgstr "צרוף מקורות...\n"
 
 #: AttachSourceTool/AttachSourceTool.py:175
-#, fuzzy
-#| msgid "Detecting faces..."
 msgid "Attaching sources..."
-msgstr "זיהוי פנים..."
+msgstr "מתבצע צרוף מקורות..."
 
 #: AttachSourceTool/AttachSourceTool.py:197
-#, fuzzy
-#| msgid "done!\n"
 msgid "Done!\n"
 msgstr "בוצע!\n"
 
@@ -4161,20 +4132,16 @@ msgid "Python Shell"
 msgstr ""
 
 #: PythonGramplet/PythonGramplet.gpr.py:5
-#, fuzzy
-#| msgid "Interactive Family Tree"
 msgid "Interactive Python interpreter"
-msgstr "אילן־יוחסין הדודי"
+msgstr "מפענחת פייתון הדודית"
 
 #: PythonGramplet/PythonGramplet.py:55
 msgid "Enter Python expressions"
 msgstr "הזנת ביטוי פייתון"
 
 #: DenominoViso/DenominoViso.py:179
-#, fuzzy
-#| msgid "Sources?"
 msgid "No Source"
-msgstr "מקורות?"
+msgstr "אין מקור"
 
 #: DenominoViso/DenominoViso.py:203 DenominoViso/DenominoViso.py:3020
 msgid "onclick"
@@ -4185,10 +4152,8 @@ msgid "onmouseover"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:208
-#, fuzzy
-#| msgid "Common ancestor"
 msgid "Ancestor"
-msgstr "אבות קדמונים משותפים"
+msgstr "אב קדמון"
 
 #: DenominoViso/DenominoViso.py:209
 msgid "Descendant"
@@ -4235,9 +4200,8 @@ msgstr ""
 #: DenominoViso/DenominoViso.py:309 DenominoViso/DenominoViso.py:975
 #: DenominoViso/DenominoViso.py:1056 DenominoViso/DenominoViso.py:1260
 #: DenominoViso/DenominoViso.py:2752
-#, fuzzy
 msgid "description"
-msgstr "תיאור:"
+msgstr "תיאור"
 
 #: DenominoViso/DenominoViso.py:310 DenominoViso/DenominoViso.py:976
 #: DenominoViso/DenominoViso.py:1063 DenominoViso/DenominoViso.py:1261
@@ -4251,16 +4215,12 @@ msgid "Failure writing %s: %s"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:395
-#, fuzzy
-#| msgid "No DB entry is selected"
 msgid "No central person selected"
-msgstr "לא נבחרה רשומת מסד־נתונים"
+msgstr "לא נבחר אדם מרכזי"
 
 #: DenominoViso/DenominoViso.py:769
-#, fuzzy
-#| msgid "unknown version"
 msgid "Unknown time direction"
-msgstr "גרסה לא ידועה"
+msgstr "כיוון ציר זמן לא ידוע"
 
 #: DenominoViso/DenominoViso.py:1508 DenominoViso/DenominoViso.py:1562
 msgid "author"
@@ -4287,10 +4247,8 @@ msgid "the chart type runs out of bounds"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2001
-#, fuzzy
-#| msgid "Search..."
 msgid "Search"
-msgstr "חיפוש..."
+msgstr "חיפוש"
 
 #: DenominoViso/DenominoViso.py:2552
 msgid "DenominoViso Options"
@@ -4301,10 +4259,8 @@ msgid "The destination file for the html-content."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2559
-#, fuzzy
-#| msgid "Note on Person"
 msgid "Central Person"
-msgstr "הערת אדם"
+msgstr "אדם מרכזי"
 
 #: DenominoViso/DenominoViso.py:2560
 msgid "The central person for the tree"
@@ -4335,10 +4291,8 @@ msgid "The type of graph to create."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2582
-#, fuzzy
-#| msgid "Detection finished"
 msgid "Direction of time"
-msgstr "הזיהוי הסתיים"
+msgstr "כיוון ציר הזמן"
 
 #: DenominoViso/DenominoViso.py:2583
 msgid "Direction in which time increases."
@@ -4353,10 +4307,8 @@ msgid "Width of the tree as fraction of the browser window"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2596
-#, fuzzy
-#| msgid "Minimum face height (px)"
 msgid "Max chart height (px)"
-msgstr "גובה פנים מזערי (פיקסל)"
+msgstr "גובה תרשים מירבי (פיקסל)"
 
 #: DenominoViso/DenominoViso.py:2597
 msgid "Height of the tree in pixels."
@@ -4373,10 +4325,8 @@ msgid ""
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2604
-#, fuzzy
-#| msgid "Include custom note"
 msgid "Include Options"
-msgstr "הכללת הערה מותאם אישית"
+msgstr "הכללת אפשרויות"
 
 #: DenominoViso/DenominoViso.py:2607
 msgid "Include private records"
@@ -4387,10 +4337,8 @@ msgid "Whether to leave out private data."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2611
-#, fuzzy
-#| msgid "Include media data"
 msgid "Include Events"
-msgstr "הכללת נתונים על מדיה"
+msgstr "הכללת אירועים"
 
 #: DenominoViso/DenominoViso.py:2613
 msgid "Whether to include a person's events."
@@ -4405,10 +4353,8 @@ msgid "Whether to include the birth of children in the list of events."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2625
-#, fuzzy
-#| msgid "Include media data"
 msgid "Include death relatives"
-msgstr "הכללת נתונים על מדיה"
+msgstr "הכללת קרובי משפחת נפטר"
 
 #: DenominoViso/DenominoViso.py:2626
 msgid ""
@@ -4416,10 +4362,8 @@ msgid ""
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2629
-#, fuzzy
-#| msgid "Include custom note"
 msgid "Include witness note"
-msgstr "הכללת הערה מותאם אישית"
+msgstr "הכללת הערת עדים"
 
 #: DenominoViso/DenominoViso.py:2630
 msgid ""
@@ -4440,10 +4384,8 @@ msgid "Whether to include a person's addresses."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2642
-#, fuzzy
-#| msgid "Include custom note"
 msgid "Include Note"
-msgstr "הכללת הערה מותאם אישית"
+msgstr "הכללת הערה"
 
 #: DenominoViso/DenominoViso.py:2643
 msgid "Whether to include a person's note."
@@ -4466,10 +4408,8 @@ msgid "Whether to include the description of the first URL"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2656
-#, fuzzy
-#| msgid "Sources?"
 msgid "Include Sources"
-msgstr "מקורות?"
+msgstr "הכללת מקורות"
 
 #: DenominoViso/DenominoViso.py:2657
 msgid "Whether to include a person's sources."
@@ -4504,10 +4444,8 @@ msgid "Determine images with which attributes to in/exclude"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2678
-#, fuzzy
-#| msgid "Include referenced people"
 msgid "Include Image source references"
-msgstr "הכללת אנשים שאליהם קיימת הפניה"
+msgstr "הכללת איזכורי מקור תמונה"
 
 #: DenominoViso/DenominoViso.py:2679
 msgid "Whether to include references for images"
@@ -4526,10 +4464,8 @@ msgid "Style Options"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2691
-#, fuzzy
-#| msgid "No relation to active person"
 msgid "Color of active person:"
-msgstr "אין קשר לאדם הפעיל"
+msgstr "צבע האדם הפעיל:"
 
 #: DenominoViso/DenominoViso.py:2692
 msgid "RGB-color of geometric shape of the activated person."
@@ -4544,10 +4480,8 @@ msgid "RGB-color of geometric shape of the persons found."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2699
-#, fuzzy
-#| msgid "No relation to active person"
 msgid "Color of male persons:"
-msgstr "אין קשר לאדם הפעיל"
+msgstr "צבע אדם במגדר זכר:"
 
 #: DenominoViso/DenominoViso.py:2700
 msgid "RGB-color of geometric shape of the male persons."
@@ -4608,10 +4542,8 @@ msgid "Mouse handler used to interact with visitor of webpage."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2736
-#, fuzzy
-#| msgid "Looking for relationship between\n"
 msgid "Birth relationship linestyle"
-msgstr "חיפוש קשרי בשפחה בין\n"
+msgstr "סגנון קו קשרי קירבה מסוג לידה"
 
 #: DenominoViso/DenominoViso.py:2738
 msgid ""
@@ -4663,19 +4595,16 @@ msgid "to directory:"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2861
-#, fuzzy
 msgid "Save images in ..."
-msgstr "בחרי אובייקט מדיה"
+msgstr "שמירת תמונות בתוך ..."
 
 #: DenominoViso/DenominoViso.py:2911
 msgid "should be"
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:2913
-#, fuzzy
-#| msgid "Include media data"
 msgid "Included"
-msgstr "הכללת נתונים על מדיה"
+msgstr "הכללה"
 
 #: DenominoViso/DenominoViso.py:2914
 msgid "Excluded"
@@ -4694,10 +4623,8 @@ msgid "Give a filename ..."
 msgstr ""
 
 #: DenominoViso/DenominoViso.py:3114
-#, fuzzy
-#| msgid "Relative"
 msgid "Relation type"
-msgstr "יחסי"
+msgstr "סוג יוחסה"
 
 #: DenominoViso/DenominoViso.py:3119
 msgid "Use dashed linestyle"
@@ -4751,10 +4678,8 @@ msgid "Rel_id"
 msgstr ""
 
 #: RelID/relation_tab.py:111
-#, fuzzy
-#| msgid "Relative"
 msgid "Relation"
-msgstr "יחסי"
+msgstr "יוחסה"
 
 #: RelID/relation_tab.py:113
 msgid "up"
@@ -4785,10 +4710,8 @@ msgid "No default_person"
 msgstr ""
 
 #: RelID/relation_tab.py:174
-#, fuzzy
-#| msgid "Generating media hashes"
 msgid "Generating relation map..."
-msgstr "חילול האש למדיה"
+msgstr "חילול מפת יוחסה"
 
 #: RelID/relation_tab.py:190
 #, python-format
@@ -20292,20 +20215,16 @@ msgid "Whether to include notes on repositories and sources."
 msgstr ""
 
 #: RepositoriesReport/RepositoriesReportAlt.py:459
-#, fuzzy
-#| msgid "Include media data"
 msgid "Include media"
-msgstr "הכללת נתונים על מדיה"
+msgstr "הכללת מדיה"
 
 #: RepositoriesReport/RepositoriesReportAlt.py:460
 msgid "Whether to include media."
 msgstr ""
 
 #: RepositoriesReport/RepositoriesReportAlt.py:463
-#, fuzzy
-#| msgid "Include custom note"
 msgid "Include citations"
-msgstr "הכללת הערה מותאם אישית"
+msgstr "הכללת מובאות"
 
 #: RepositoriesReport/RepositoriesReportAlt.py:464
 msgid "Whether to include citations on sources."
@@ -20333,10 +20252,8 @@ msgid "The style used for child section."
 msgstr ""
 
 #: GedcomExtensions/GedcomExtensions.py:197
-#, fuzzy
-#| msgid "Include custom note"
 msgid "Include witnesses"
-msgstr "הכללת הערה מותאם אישית"
+msgstr "הכללת עדים"
 
 #: GedcomExtensions/GedcomExtensions.py:201
 msgid "Patronymic names:"
@@ -20344,10 +20261,8 @@ msgstr ""
 
 #: GedcomExtensions/GedcomExtensions.py:203
 #: GedcomExtensions/GedcomExtensions.py:210
-#, fuzzy
-#| msgid "No changes"
 msgid "Don't change"
-msgstr "אין שינויים"
+msgstr "לא לשנות"
 
 #: GedcomExtensions/GedcomExtensions.py:204
 msgid "Add Patronymic name after Given name"
@@ -20358,16 +20273,12 @@ msgid "Ignore Patronymic name"
 msgstr ""
 
 #: GedcomExtensions/GedcomExtensions.py:208
-#, fuzzy
-#| msgid "Type of link"
 msgid "Type of surname:"
-msgstr "סוג קישור"
+msgstr "סוג שם משפחה:"
 
 #: GedcomExtensions/GedcomExtensions.py:261
-#, fuzzy
-#| msgid "Export"
 msgid "Export failed"
-msgstr "ייצוא"
+msgstr "ייצוא כשל"
 
 #: GedcomExtensions/GedcomExtensions.gpr.py:32
 msgid "Export GEDCOM Extensions (GED2)"
@@ -20435,21 +20346,18 @@ msgid "Order by timeline"
 msgstr ""
 
 #: TimelinePedigreeView/TimelinePedigreeView.py:1439
-#, fuzzy
-#| msgid "Show help"
 msgid "Show lifespan"
-msgstr "הצגת עזרה"
+msgstr "הצגת משך חיים"
 
 #: TimelinePedigreeView/TimelinePedigreeView.py:1470
 #: TimelinePedigreeView/TimelinePedigreeView.py:1486
-#, fuzzy, python-format
-#| msgid "Add relation"
+#, python-format
 msgid "%d generation"
 msgid_plural "%d generations"
-msgstr[0] "הוספת קשר-גומלין"
-msgstr[1] "הוספת קשר-גומלין"
-msgstr[2] "הוספת קשר-גומלין"
-msgstr[3] "הוספת קשר-גומלין"
+msgstr[0] "דור %d"
+msgstr[1] "%d דורות"
+msgstr[2] "%d דורות"
+msgstr[3] "%d דורות"
 
 #: TimelinePedigreeView/TimelinePedigreeView.py:1505
 msgid "About Timeline Pedigree View"
@@ -20484,16 +20392,12 @@ msgid "Highlight the home person"
 msgstr ""
 
 #: GraphView/graphview.py:764 GraphView/graphview.py:3744
-#, fuzzy
-#| msgid "Show Built-in items"
 msgid "Show full dates"
-msgstr "הצג פריטים מובנים"
+msgstr "הצגת תאריכים מלאים"
 
 #: GraphView/graphview.py:768 GraphView/graphview.py:3752
-#, fuzzy
-#| msgid "Change places"
 msgid "Show places"
-msgstr "החלפת מקומות"
+msgstr "הצגת מקומות"
 
 #: GraphView/graphview.py:784
 msgid "Vertical: Top to Bottom"
@@ -20512,10 +20416,8 @@ msgid "Horizontal: Right to Left"
 msgstr ""
 
 #: GraphView/graphview.py:786
-#, fuzzy
-#| msgid "Toggle Selection"
 msgid "Time Direction"
-msgstr "החלפת בחירה"
+msgstr "כיוון ציר זמן"
 
 #: GraphView/graphview.py:791
 msgid "Limit number of people displayed (use 0 for unlimited)"
@@ -20530,10 +20432,8 @@ msgid "Path color to home person"
 msgstr ""
 
 #: GraphView/graphview.py:821
-#, fuzzy
-#| msgid "Font"
 msgid "Font:"
-msgstr "גופן"
+msgstr "גופן:"
 
 #: GraphView/graphview.py:835
 msgid "Avatars style"
@@ -20560,10 +20460,8 @@ msgid "Choose female avatar"
 msgstr ""
 
 #: GraphView/graphview.py:872
-#, fuzzy
-#| msgid "unknown version"
 msgid "Unknown avatar:"
-msgstr "גרסה לא ידועה"
+msgstr "יצגן לא ידוע:"
 
 #: GraphView/graphview.py:873
 msgid "Choose Unknown avatar"
@@ -20578,20 +20476,16 @@ msgid "Choose Other avatar"
 msgstr ""
 
 #: GraphView/graphview.py:900
-#, fuzzy
-#| msgid "Active person"
 msgid "Active person border size"
-msgstr "אדם פעיל"
+msgstr "גודל גבול אדם פעיל"
 
 #: GraphView/graphview.py:905
 msgid "Person border size"
 msgstr ""
 
 #: GraphView/graphview.py:908
-#, fuzzy
-#| msgid "Theme"
 msgid "Themes"
-msgstr "ערכת נושא"
+msgstr "ערכות נושא"
 
 #: GraphView/graphview.py:921 GraphView/graphview.py:3770
 msgid "Show animation"
@@ -20618,10 +20512,8 @@ msgid "Also apply search by all database."
 msgstr ""
 
 #: GraphView/graphview.py:957
-#, fuzzy
-#| msgid "Show hidden items"
 msgid "Show person images"
-msgstr "הצג פריטים מוסתרים"
+msgstr "הצגת תמונות אדם"
 
 #: GraphView/graphview.py:960
 msgid "Show persons thumbnails in search result list."
@@ -20636,16 +20528,12 @@ msgid "Show bookmarked persons first in search result list."
 msgstr ""
 
 #: GraphView/graphview.py:999
-#, fuzzy
-#| msgid "Select A File"
 msgid "Select a dot file name"
-msgstr "בחירת קובץ"
+msgstr "בחר שם קובץ נקודה"
 
 #: GraphView/graphview.py:1123
-#, fuzzy
-#| msgid "Set as active person"
 msgid "Go to active person"
-msgstr "הגדרה כאדם נפעיל"
+msgstr "מעבר לאדם הפעיל"
 
 #: GraphView/graphview.py:1128
 msgid "Go to bookmark"
@@ -20672,16 +20560,12 @@ msgid "Descendant generations"
 msgstr ""
 
 #: GraphView/graphview.py:1179
-#, fuzzy
-#| msgid "Average years between two generations"
 msgid "Vertical spacing between generations"
-msgstr "מספר שנים ממוצע בין שני דורות"
+msgstr "רווח אנכי בין דורות"
 
 #: GraphView/graphview.py:1184
-#, fuzzy
-#| msgid "Average years between two generations"
 msgid "Horizontal spacing between generations"
-msgstr "מספר שנים ממוצע בין שני דורות"
+msgstr "רווח אופקי בין דורות"
 
 #: GraphView/graphview.py:1188
 msgid "Spacings"
@@ -20698,10 +20582,8 @@ msgid ""
 msgstr ""
 
 #: GraphView/graphview.py:1337
-#, fuzzy
-#| msgid "Active person"
 msgid "Add active person"
-msgstr "אדם פעיל"
+msgstr "הוספת אדם פעיל"
 
 #: GraphView/graphview.py:1342
 msgid "Call the bookmark editor"
@@ -20723,10 +20605,9 @@ msgstr ""
 
 #: GraphView/graphview.py:1417 GraphView/graphview.py:1419
 #: GraphView/search_widget.py:233 GraphView/search_widget.py:252
-#, fuzzy, python-format
-#| msgid "found"
+#, python-format
 msgid "found: %s"
-msgstr "נמצא"
+msgstr "נמצא: %s"
 
 #: GraphView/graphview.py:1429
 #, python-format
@@ -20743,10 +20624,8 @@ msgid ""
 msgstr ""
 
 #: GraphView/graphview.py:1519
-#, fuzzy
-#| msgid "Set as active person"
 msgid "Change active person?"
-msgstr "הגדרה כאדם נפעיל"
+msgstr "שינוי אדם פעיל"
 
 #: GraphView/graphview.py:2668
 #, python-brace-format
@@ -20790,32 +20669,24 @@ msgid "Ortho"
 msgstr ""
 
 #: GraphView/graphview.py:3875
-#, fuzzy
-#| msgid "No relation to active person"
 msgid "No Events for this person"
-msgstr "אין קשר לאדם הפעיל"
+msgstr "אין אירועים לאדם זה"
 
 #: GraphView/graphview.py:3896
-#, fuzzy
-#| msgid "Set as active person"
 msgid "Select tags for person"
-msgstr "הגדרה כאדם נפעיל"
+msgstr "בחירת תגים לאדם"
 
 #: GraphView/graphview.py:3907
 msgid "Add new family"
 msgstr ""
 
 #: GraphView/graphview.py:4025
-#, fuzzy
-#| msgid "Add as a Parent"
 msgid "Add parents"
-msgstr "הוספה כהורה"
+msgstr "הוספת שותפים"
 
 #: GraphView/graphview.py:4051
-#, fuzzy
-#| msgid "No relation to active person"
 msgid "Show path to home person"
-msgstr "אין קשר לאדם הפעיל"
+msgstr "הצגת נתיב לאדם הבית"
 
 #: GraphView/graphview.py:4057 GraphView/search_widget.py:286
 #: GraphView/search_widget.py:364
@@ -20836,16 +20707,12 @@ msgid "Select tags for family"
 msgstr ""
 
 #: GraphView/graphview.py:4201
-#, fuzzy
-#| msgid "Add as a Father"
 msgid "Add father"
-msgstr "הוספה כאב"
+msgstr "הוספת אב"
 
 #: GraphView/graphview.py:4210
-#, fuzzy
-#| msgid "Add as a Mother"
 msgid "Add mother"
-msgstr "הוספה כאם"
+msgstr "הוספת אם"
 
 #: GraphView/graphview.py:4313
 msgid "About Graph View"
@@ -20879,10 +20746,8 @@ msgid "Dark (default)"
 msgstr ""
 
 #: GraphView/avatars.py:61
-#, fuzzy
-#| msgid "Height:"
 msgid "Light"
-msgstr "גובה:"
+msgstr "קל"
 
 #: GraphView/avatars.py:62
 msgid "Cartoon"
@@ -20924,10 +20789,8 @@ msgid "Person Overview"
 msgstr ""
 
 #: Overview/Overview.gpr.py:30
-#, fuzzy
-#| msgid "Gramplet showing relatives in a relation"
 msgid "Gramplet showing an overview of events for a person"
-msgstr "גרמפלט להצגת קרובי משפחה וקשרי קירבה"
+msgstr "גרמפלט להצגת תקציר אירועים לאדם"
 
 #: Overview/Overview.gpr.py:37 Overview/Overview.gpr.py:53
 msgid "Overview"
@@ -20938,10 +20801,8 @@ msgid "Family Overview"
 msgstr ""
 
 #: Overview/Overview.gpr.py:46
-#, fuzzy
-#| msgid "Gramplet showing relatives in a relation"
 msgid "Gramplet showing an overview of events for a family"
-msgstr "גרמפלט להצגת קרובי משפחה וקשרי קירבה"
+msgstr "גרמפלט להצגת תקציר אירועים למשפחה"
 
 #: HistContext/HistContext.gpr.py:4 HistContext/HistContext.gpr.py:14
 msgid "Historical Context"
@@ -20956,16 +20817,12 @@ msgid "Rows starting with this in the text column will be hidden "
 msgstr ""
 
 #: HistContext/HistContext.py:126
-#, fuzzy
-#| msgid "Place _filter:"
 msgid "Use filter "
-msgstr "מסנן _מקומות:"
+msgstr "שימוש במסנן "
 
 #: HistContext/HistContext.py:129
-#, fuzzy
-#| msgid "Show hidden items"
 msgid "Show outside life span "
-msgstr "הצג פריטים מוסתרים"
+msgstr "הצגה מחוץ למשך חיים "
 
 #: HistContext/HistContext.py:132
 msgid "Use full dates"
@@ -20988,10 +20845,8 @@ msgid "Background color items outside lifespan"
 msgstr ""
 
 #: HistContext/HistContext.py:149
-#, fuzzy
-#| msgid "Select A File"
 msgid "Select from files"
-msgstr "בחירת קובץ"
+msgstr "בחירה מקבצים"
 
 #: HistContext/HistContext.py:287
 msgid "Invalid date "
@@ -21003,10 +20858,8 @@ msgstr ""
 
 #: HistContext/HistContext.py:289 HistContext/HistContext.py:333
 #: HistContext/HistContext.py:420
-#, fuzzy
-#| msgid "Errors"
 msgid "Error:"
-msgstr "שגיאות"
+msgstr "שגיאה:"
 
 #: HistContext/HistContext.py:327
 msgid ": line does not contain four sections separated by semicolons in : \""
@@ -21086,10 +20939,8 @@ msgid "Server authorization error: insufficient permissions."
 msgstr ""
 
 #: GrampsWebSync/grampswebsync.py:495
-#, fuzzy
-#| msgid "not found."
 msgid "Error: URL not found."
-msgstr "לא נמצא."
+msgstr "שגיאה: לא נמצא URL."
 
 #: GrampsWebSync/grampswebsync.py:499
 msgid "Unable to synchronize changes to server: objects have been modified."
@@ -21159,34 +21010,25 @@ msgid "Reset local to remote"
 msgstr ""
 
 #: GrampsWebSync/grampswebsync.py:799
-#, fuzzy
-#| msgid "Merge Media"
 msgid "Merge"
-msgstr "למזג מדיה"
+msgstr "מיזוג"
 
 #: GrampsWebSync/grampswebsync.py:824
-#, fuzzy
-#| msgid "No changes"
 msgid "Local changes"
-msgstr "אין שינויים"
+msgstr "שינויים מקומיים"
 
 #: GrampsWebSync/grampswebsync.py:827 GrampsWebSync/grampswebsync.py:832
 #: GrampsWebSync/grampswebsync.py:834
-#, fuzzy
 msgid "Modified"
-msgstr "שונה לאחרונה"
+msgstr "מוסגל"
 
 #: GrampsWebSync/grampswebsync.py:829
-#, fuzzy
-#| msgid "No changes"
 msgid "Remote changes"
-msgstr "אין שינויים"
+msgstr "שינויים מרחוק"
 
 #: GrampsWebSync/grampswebsync.py:834
-#, fuzzy
-#| msgid "Doing Place changes"
 msgid "Simultaneous changes"
-msgstr "ביצוע שינויים ב'מקומות'"
+msgstr "שינויים בו־זמנית"
 
 #: GrampsWebSync/grampswebsync.py:891
 msgid "Fetching information about media files..."
@@ -21197,20 +21039,16 @@ msgid "Both trees are the same."
 msgstr ""
 
 #: GrampsWebSync/grampswebsync.py:918
-#, fuzzy
-#| msgid "Apply geo location to Database"
 msgid "Applying changes to local database ..."
-msgstr "החלת איכון (גאו־לוקיישן) על מסד הנתונים"
+msgstr "החלת שינויים במסד נתונים מקומי ..."
 
 #: GrampsWebSync/grampswebsync.py:920
 msgid "No changes to apply to local database."
 msgstr ""
 
 #: GrampsWebSync/grampswebsync.py:923
-#, fuzzy
-#| msgid "Apply geo location to Database"
 msgid "Applying changes to remote database ..."
-msgstr "החלת איכון (גאו־לוקיישן) על מסד הנתונים"
+msgstr "החלת שינויים במסד נתונים מרוחק ..."
 
 #: GrampsWebSync/grampswebsync.py:926
 msgid "No changes to apply to remote database."
