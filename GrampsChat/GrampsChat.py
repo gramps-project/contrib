@@ -7,10 +7,9 @@ import os
 
 try:
     import litellm
-    from litellm.integrations.opik.opik import OpikLogger
 except ImportError:
     raise Exception("GrampsChat requires litellm")
-#import markdown
+# import markdown
 
 from gramps.gen.plug import Gramplet
 from gramps.gen.const import GRAMPS_LOCALE as glocale
@@ -73,8 +72,14 @@ if OPIK_PROJECT_NAME is None:
     os.environ["OPIK_PROJECT_NAME"] = "gramps"
 
 if OPIK_API_KEY:
+    try:
+        from litellm.integrations.opik.opik import OpikLogger
+    except Exception:
+        raise Exception("GrampsChat with OPIK_API_KEY set requires opik")
+
     opik_logger = OpikLogger()
-    litellm.callbacks = [opik_logger]    
+    litellm.callbacks = [opik_logger]
+
 
 class GrampsChat(Gramplet):
     def init(self):
@@ -107,15 +112,14 @@ class Chatbot(Gtk.Box):
         tag = self.textbuffer.create_tag("user_message")
         tag.set_property("justification", Gtk.Justification.LEFT)
         tag.set_property("weight", Pango.Weight.BOLD)
-        #tag.set_property("background", "#E9EEF6")
+        # tag.set_property("background", "#E9EEF6")
         tag = self.textbuffer.create_tag("chatbot_message")
         tag.set_property("justification", Gtk.Justification.LEFT)
 
-
         scrolled_window = Gtk.ScrolledWindow()
         scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
-        scrolled_window.add(self.textview) # Use add() in Gtk 3
-        self.pack_start(scrolled_window, True, True, 0) # Use pack_start
+        scrolled_window.add(self.textview)  # Use add() in Gtk 3
+        self.pack_start(scrolled_window, True, True, 0)  # Use pack_start
 
         hbox = Gtk.Box(spacing=5, orientation=Gtk.Orientation.HORIZONTAL)
         label = Gtk.Label(label="Ask Gramps:")
@@ -134,11 +138,14 @@ class Chatbot(Gtk.Box):
         if GRAMPS_AI_MODEL_NAME is None:
             self.append_message(HELP_TEXT, is_user=False)
         else:
-            self.append_message(f"""Enviroment:
+            self.append_message(
+                f"""Enviroment:
     GRAMPS_AI_MODEL_NAME="{GRAMPS_AI_MODEL_NAME}"
     GRAMPS_AI_MODEL_URL="{GRAMPS_AI_MODEL_URL if GRAMPS_AI_MODEL_URL else ''}"
 
-""", is_user=False)
+""",
+                is_user=False,
+            )
 
         self.show_all()
 
@@ -147,8 +154,8 @@ class Chatbot(Gtk.Box):
 
     def append_message(self, message, is_user=False):
         # FIXME: write a dynamic parser
-        #text = markdown.markdown(message)
-        #replacements = [
+        # text = markdown.markdown(message)
+        # replacements = [
         #     ("<p>", ""), ("</p>", " "),
         #     ("<strong>", "<b>"), ("</strong>", "</b>"),
         #     ("<em>", "<i>"), ("</em>", "</i>"),
@@ -161,13 +168,15 @@ class Chatbot(Gtk.Box):
         # ]
         # for old, new in replacements:
         #     text = text.replace(old, new)
-        #self.textbuffer.insert_markup(self.textbuffer.get_end_iter(), text, -1)
+        # self.textbuffer.insert_markup(self.textbuffer.get_end_iter(), text, -1)
 
         text = message
         self.textbuffer.insert_at_cursor(text, len(text))
 
         end_iter = self.textbuffer.get_end_iter()
-        start_iter = self.textbuffer.get_iter_at_offset(end_iter.get_offset() - len(text))
+        start_iter = self.textbuffer.get_iter_at_offset(
+            end_iter.get_offset() - len(text)
+        )
 
         if is_user:
             tag_name = "user_message"
@@ -178,7 +187,7 @@ class Chatbot(Gtk.Box):
 
         iter = self.textbuffer.get_end_iter()
         self.textview.scroll_to_iter(iter, 0.0, False, 0.0, 1.0)
-        #self.textview.scroll_to_iter(iter, True, True, 0.0, 1.0)
+        # self.textview.scroll_to_iter(iter, True, True, 0.0, 1.0)
 
     def append_message_chunk(self, chunk):
         if chunk:
@@ -203,8 +212,7 @@ class Chatbot(Gtk.Box):
                     if self.thread:
                         self.thread.join()
                     self.thread = threading.Thread(
-                        target=self.get_chatbot_response,
-                        args=(user_input,)
+                        target=self.get_chatbot_response, args=(user_input,)
                     )
                     self.thread.daemon = True
                     self.thread.start()
@@ -214,17 +222,17 @@ class Chatbot(Gtk.Box):
             {
                 "role": "system",
                 "content": SYSTEM_PROMPT,
-            }
+            },
         ]
         self.textbuffer.set_text("")
 
     def get_chatbot_response(self, user_input):
-        self.messages.append({'role': 'user', 'content': user_input})
+        self.messages.append({"role": "user", "content": user_input})
         response = litellm.completion(
             model=GRAMPS_AI_MODEL_NAME,
             api_base=GRAMPS_AI_MODEL_URL,
             messages=self.messages[:],
-            stream=True
+            stream=True,
         )
         retval = ""
         for chunk in response:
